@@ -4,7 +4,7 @@ module.exports = function (grunt) {
 	grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 		browserify: {
-			main: {
+			standalone: {
                 options: {
                     browserifyOptions: {
                         standalone: 'KevoreeModel'
@@ -12,7 +12,14 @@ module.exports = function (grunt) {
                 },
 				src: ['<%= pkg.main %>'],
 				dest: 'browser/<%= pkg.name %>.js'
-			}
+			},
+            require: {
+                options: {
+                    alias: [ '<%= pkg.main %>:<%= pkg.name %>' ]
+                },
+                src: [],
+                dest: 'browser/<%= pkg.name %>.require.js'
+            }
 		}
 	});
 
