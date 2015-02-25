@@ -1,7 +1,7 @@
 {
   "name": "kevoree-model",
   "main": "browser/kevoree-model.js",
-  "version": "5.0.4",
+  "version": "5.0.0",
   "homepage": "https://github.com/kevoree/kevoree-js-model",
   "authors": [
     "Maxime Tricoire <max.tricoire@gmail.com>"
