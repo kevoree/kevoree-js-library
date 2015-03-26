@@ -4,6 +4,9 @@
   "description": "Kevoree JavaScript library - Generated with KMF",
   "author": "Maxime Tricoire <max.tricoire@gmail.com>",
   "main": "./kevoree-library.js",
+  "scripts": {
+    "prepublish": "grunt"
+  },
   "keywords": [
     "kevoree",
     "library",
