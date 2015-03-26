@@ -41602,6 +41602,8 @@ if (!Kotlin.modules['kevoree']) {
 }
 
 module.exports = Kotlin.modules['kevoree'].org.kevoree;
-
+module.exports.org = {
+  kevoree: Kotlin.modules['kevoree'].org.kevoree
+}
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"kevoree-kotlin":1}]},{},[]);
