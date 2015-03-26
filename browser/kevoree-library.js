@@ -279,7 +279,7 @@ module.exports = require('./lib/kotlin');
         }
       }
       c.values$ = d;
-      c.valueOf_61zpoe$ = a;
+      c.valueOf_61zpoe$ = c.valueOf = a; // FIX because Enum.valueOf() is called instead of valueOf_61zpoe$()
       c.values = b;
       return c;
     };
@@ -971,7 +971,7 @@ Kotlin.PrimitiveHashSet = Kotlin.createClassNow(Kotlin.AbstractCollection, funct
   Kotlin.ComplexHashSet = Kotlin.HashSet;
 })();
 module.exports = Kotlin;
-},{}],"kevoree-model":[function(require,module,exports){
+},{}],"kevoree-library":[function(require,module,exports){
 (function (global){
 if (!global.Kotlin) {
     global.Kotlin = require('kevoree-kotlin');

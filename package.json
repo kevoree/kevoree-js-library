@@ -1,9 +1,9 @@
 {
-  "name": "kevoree-model",
+  "name": "kevoree-library",
   "version": "5.0.2",
-  "description": "Kevoree JavaScript model - Generated with KMF",
+  "description": "Kevoree JavaScript library - Generated with KMF",
   "author": "Maxime Tricoire <max.tricoire@gmail.com>",
-  "main": "./kevoree-model.js",
+  "main": "./kevoree-library.js",
   "keywords": [
     "kevoree",
     "library",
@@ -11,11 +11,11 @@
   ],
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/kevoree/kevoree-js-model/issues"
+    "url": "https://github.com/kevoree/kevoree-js-library/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kevoree/kevoree-js-model"
+    "url": "https://github.com/kevoree/kevoree-js-library"
   },
   "devDependencies": {
     "chai": "^1.9.1",
