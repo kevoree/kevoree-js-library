@@ -40627,3 +40627,6 @@ if (!Kotlin.modules['kevoree']) {
 }
 
 module.exports = Kotlin.modules['kevoree'].org.kevoree;
+module.exports.org = {
+  kevoree: Kotlin.modules['kevoree'].org.kevoree
+}

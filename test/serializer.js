@@ -1,6 +1,6 @@
 // Created by leiko on 06/08/14 11:59
 var expect = require('chai').expect;
-var kevoree = require('../kevoree-model');
+var kevoree = require('../kevoree-library');
 
 var factory = new kevoree.factory.DefaultKevoreeFactory();
 var serializer = factory.createJSONSerializer();

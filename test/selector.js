@@ -1,6 +1,6 @@
 // Created by leiko on 15/09/14 12:15
 var expect = require('chai').expect;
-var kevoree = require('../kevoree-model');
+var kevoree = require('../kevoree-library');
 
 var factory = new kevoree.factory.DefaultKevoreeFactory();
 
