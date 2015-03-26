@@ -6,10 +6,11 @@ module.exports = function (grunt) {
 		browserify: {
             browser: {
                 options: {
-                    alias: [ '<%= pkg.main %>:<%= pkg.name %>' ],
-                    external: [ 'kevoree-kotlin' ]
+                    browserifyOptions: {
+                        standalone: 'KevoreeLibrary'
+                    }
                 },
-                src: [],
+                src: ['<%= pkg.main %>'],
                 dest: 'browser/<%= pkg.name %>.js'
             }
 		}
