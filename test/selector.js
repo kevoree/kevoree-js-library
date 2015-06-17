@@ -29,6 +29,16 @@ describe('KMF selectors: tests suite', function () {
         expect(tdef.version).to.equal(TDEF_VERS);
     });
 
+    it('should return an array of 1 Package using "model.select(\'**/packages[name=bar]\')"', function () {
+        var res = model.select('**/packages[name=bar]');
+        expect(res.size()).to.equal(1);
+    });
+
+    it('should return an array of 2 Packages using "model.select(\'**/packages[name=*ar]\')"', function () {
+        var res = model.select('**/packages[name=*ar]');
+        expect(res.size()).to.equal(2);
+    });
+
     // TODO add more tests
 });
 
@@ -44,9 +54,17 @@ function createModel() {
     // create kevoree package
     var kevPkg = factory.createPackage();
     kevPkg.name = KEV_PKG;
-
     // add kevoree pkg to org pkg
     orgPkg.addPackages(kevPkg);
+
+    var foobarPkg = factory.createPackage();
+    foobarPkg.name = 'foobar';
+
+    var barPkg = factory.createPackage();
+    barPkg.name = 'bar';
+
+    model.addPackages(foobarPkg);
+    model.addPackages(barPkg);
 
     // create MyTDef
     var myTDef = factory.createTypeDefinition();
