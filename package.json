@@ -1,11 +1,12 @@
 {
   "name": "kevoree-library",
-  "version": "5.0.9",
+  "version": "5.0.10-alpha",
   "description": "Kevoree JavaScript library - Generated with KMF",
   "author": "Maxime Tricoire <max.tricoire@gmail.com>",
   "main": "./kevoree-library.js",
   "scripts": {
-    "prepublish": "grunt"
+    "prepublish": "grunt",
+    "test": "mocha test/server"
   },
   "keywords": [
     "kevoree",
@@ -23,7 +24,8 @@
   "devDependencies": {
     "chai": "^1.9.1",
     "grunt": "^0.4.5",
-    "grunt-browserify": "^3.4.0",
+    "grunt-browserify": "^5.0.0",
+    "mocha": "^2.5.3",
     "tmp": "0.0.24"
   },
   "optionalDependencies": {},

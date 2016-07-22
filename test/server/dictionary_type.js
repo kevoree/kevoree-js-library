@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var kevoree = require('../kevoree-library');
+var kevoree = require('../../kevoree-library');
 
 var NAME = 'myAttr';
 
