@@ -1,7 +1,4 @@
-if (!global.Kotlin) {
-    global.Kotlin = require('kevoree-kotlin');
-}
-var Kotlin = global.Kotlin;
+var Kotlin = require('kevoree-kotlin');
 
 if (!Kotlin.modules['kevoree']) {
   var _ = Kotlin.defineRootPackage(null, /** @lends _ */ {
