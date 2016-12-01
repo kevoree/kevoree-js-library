@@ -1,6 +1,6 @@
 {
   "name": "kevoree-library",
-  "version": "5.0.10-alpha.6",
+  "version": "5.0.10",
   "description": "Kevoree JavaScript library - Generated with KMF",
   "author": "Maxime Tricoire <max.tricoire@gmail.com>",
   "main": "./kevoree-library.js",
